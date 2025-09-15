@@ -3,23 +3,38 @@
 int main(){
     //Variavel
     int i = 1;
-    //Estrutura de repetição While
+    int cavalo = 1;
+
+    //Movimento da Torre
     while (i <= 5)
     {
-        printf("Torre move-se para a direita!\n");//Movimentação da primeira peça
+        printf("Torre move-se para a direita!\n");
         i++;
     }
-    //Estrutura de repetição Do-While
+
+    //Movimento do Bispo
     do
     {
-        printf("Bispo move-se para cima a esquerda!\n");//Movimentação da segunda peça
+        printf("Bispo move-se para cima a esquerda!\n");
         i++;
     } while (i <= 10);
-    //Estrutura de repetição For
+
+    //Movimento da Rainha
     for (i = 1; i <= 8; i++)
     {
-        printf("Rainha move-se para a esquerda!\n");//Movimentação da terceira peça
+        printf("Rainha move-se para a esquerda!\n");
     }
+    
+    //Movimento do Cavalo
+    while (cavalo--)
+    {
+        for (i = 0; i < 2; i++)
+        {
+            printf("Cavalo se move para baixo!\n");
+        }
+        printf("Cavalo se move para a esquerda!\n");
+    }
+    
     
     return 0;
 }
